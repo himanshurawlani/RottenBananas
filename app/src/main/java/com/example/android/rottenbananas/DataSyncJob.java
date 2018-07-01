@@ -83,6 +83,11 @@ public class DataSyncJob extends Job {
                                     Double d = Double.parseDouble(map.get("days_left").toString());
                                     if (d > 0) {
                                         map.put("days_left", d - 1);
+                                        if (Double.parseDouble(map.get("days_left").toString()) <= 2) {
+                                            map.put("state", "over ripe");
+                                        } else if (Double.parseDouble(map.get("days_left").toString()) <= 5) {
+                                            map.put("state", "ripe");
+                                        }
 
                                         // Add a new document with a generated ID
                                         db.collection("angel").document(document.getId())
