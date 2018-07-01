@@ -5,27 +5,27 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
-    ir-eligibility="FIELD_REMOVED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.3"
-    timestamp="1530427203772"
+    timestamp="1530428621297"
     token="7005796099539137974"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1193" />
+        duration="587" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="113" />
+        duration="16" />
     <task
         name="verifier"
-        duration="26" />
+        duration="4" />
 
     <artifact
-        location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/tflite/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
 
     <build
@@ -79,6 +79,57 @@
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/tflite/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1530428429986"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1530428621297"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/ubuntu/Desktop/AngelHack/TFLite/tensorflow-for-poets-2/android/RottenBananas/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
     </build>
 

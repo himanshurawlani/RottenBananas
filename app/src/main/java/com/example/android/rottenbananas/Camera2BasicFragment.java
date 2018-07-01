@@ -22,7 +22,6 @@ import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -56,7 +55,6 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -64,7 +62,6 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.io.IOException;
@@ -322,8 +319,8 @@ public class Camera2BasicFragment extends Fragment
   /** Connect the buttons to their event handler. */
   @Override
   public void onViewCreated(final View view, Bundle savedInstanceState) {
-    textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
-    textView = (TextView) view.findViewById(R.id.text);
+    textureView = view.findViewById(R.id.texture);
+    textView = view.findViewById(R.id.text);
     hashMap.put("raw", 0.0);
     hashMap.put("ripe", 0.0);
     hashMap.put("rotten", 0.0);
@@ -436,7 +433,7 @@ public class Camera2BasicFragment extends Fragment
       extras.putString("a", "abc");
 
       //Schedule Data Syncing
-      DataSyncJob.scheduleJob();
+    DataSyncJob.scheduleAdvancedJob(formattedDate + "_" + c);
 
 
     Log.d("Camera2BasicFragment","onDestroy() called");
